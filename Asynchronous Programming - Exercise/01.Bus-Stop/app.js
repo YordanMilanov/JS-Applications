@@ -10,6 +10,7 @@ async function getInfo() {
         const response = await fetch(`http://localhost:3030/jsonstore/bus/businfo/${stopId}`);
 
         if(!response.ok) {
+            let error = new Error();
             error.status = response.status;
             error.statusText = response.statusText;
             throw error;
