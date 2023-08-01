@@ -10,4 +10,3 @@ const cancelButtonElement = buttonsElements[0];
 cancelButtonElement.addEventListener('click', onClose);
 const createPostButtonElement = buttonsElements[1];
 createPostButtonElement.addEventListener('click', createPost);
-
